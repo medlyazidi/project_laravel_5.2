@@ -1,0 +1,47 @@
+@foreach($ssLigneBs as $ssLigneB)
+                                                                @if($ssLigneB->id_ligneB == $ligneBudgetaire->id_ligneBudgetaire)
+                                                                    <option value="{!! $ligneBudgetaire->libelle_ligneB !!}" class="optionGroupChild">{!! $ligneBudgetaire->libelle_ligneB !!}</option>
+
+
+                                                                        @foreach($ssSsLignBs as $ssSsLignB)
+                                                                            @if($ssSsLignB->id_sousSousligneBs == $ssLigneB->id_ligneBudgetaire)
+                                                                                <option value="{!! $ligneBudgetaire->libelle_ligneB !!}" class="optionChild">{!! $ligneBudgetaire->libelle_ligneB !!}</option>
+                                                                            @endif
+                                                                        @endforeach
+
+
+                                                                @endif
+
+                                                            @endforeach
+
+
+* les absences etudiants à justifier
+* w les absences d  prof
+* seance de rat
+
+
+SELECT absence_etudiant.id_professeur, absence_etudiant.date_seance, seance.id_cours, cours.libelle_cours
+FROM absence_etudiant
+INNER JOIN utilisateur ON absence_etudiant.id_professeur = utilisateur.id_utilisateur
+INNER JOIN seance ON absence_etudiant.id_seance = seance.id_seance
+INNER JOIN cours ON seance.id_cours = cours.id_cours
+
+
+
+SELECT DISTINCT cours.libelle_cours, utilisateur.nom, utilisateur.prenom
+FROM cours, utilisateur 
+WHERE cours.id_cours 
+IN ( SELECT DISTINCT seance.id_cours FROM seance WHERE seance.id_professeur IN ( SELECT DISTINCT absence_etudiant.id_professeur FROM absence_etudiant WHERE  absence_etudiant.id_etudiant = 1  )) 
+AND utilisateur.id_utilisateur 
+IN ( SELECT DISTINCT absence_etudiant.id_professeur FROM absence_etudiant WHERE absence_etudiant.id_etudiant = 1 )
+
+SELECT cours.libelle_cours, utilisateur.nom, utilisateur.prenom FROM cours, utilisateur WHERE cours.id_cours IN ( SELECT seance.id_cours FROM seance WHERE seance.id_professeur IN ( SELECT absence_etudiant.id_professeur FROM absence_etudiant WHERE  absence_etudiant.id_etudiant = 1  )  ) AND utilisateur.id_utilisateur IN ( SELECT absence_etudiant.id_professeur FROM absence_etudiant WHERE absence_etudiant.id_etudiant = 1 )
+
+
+SELECT DISTINCT cours.libelle_cours, utilisateur.nom, utilisateur.prenom, absence_etudiant.id_absence_etudiant
+FROM cours, utilisateur , absence_etudiant
+WHERE cours.id_cours 
+IN ( SELECT DISTINCT seance.id_cours FROM seance WHERE seance.id_professeur IN ( SELECT DISTINCT absence_etudiant.id_professeur FROM absence_etudiant WHERE  absence_etudiant.id_etudiant = 1  )) 
+AND utilisateur.id_utilisateur 
+IN ( SELECT DISTINCT absence_etudiant.id_professeur FROM absence_etudiant WHERE absence_etudiant.id_etudiant = 1 )
+ORDER BY absence_etudiant.id_absence_etudiant

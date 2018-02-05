@@ -1,0 +1,29 @@
+Canada :
+	- Lettre d’invitation 
+	- Lettre de bourse 
+	- Sujet 
+
+8D889DCD94
+
+
+
+set foreign_key_checks=0;
+CREATE TABLE `ensak_abs_db`.`utilisateur` ( 
+    `id_utilisateur` INT NOT NULL AUTO_INCREMENT , 
+    `nom` VARCHAR(60) NOT NULL , 
+    `prenom` VARCHAR(60) NOT NULL , 
+    `email` VARCHAR(200) NOT NULL , 
+    `date_nessance` DATE NOT NULL , 
+    `password` VARCHAR(255) NOT NULL , 
+    `role` INT NOT NULL , 
+    `apogee` VARCHAR(255) ,
+    `poste` VARCHAR(255) ,
+    PRIMARY KEY (`id_utilisateur`),
+    `id_annee` INT ,
+	FOREIGN Key (`id_annee`) REFERENCES `annee_universitaire`(`id_annee`) ,
+    `id_cycle` INT ,
+	FOREIGN Key (`id_cycle`) REFERENCES `cycle_universitaire`(`id_cycle`) ,
+     `id_filiere` INT ,
+	FOREIGN Key (`id_filiere`) REFERENCES `filiere`(`id_filiere`) ,
+    `CNE` INT 
+) ENGINE = INNODB;
