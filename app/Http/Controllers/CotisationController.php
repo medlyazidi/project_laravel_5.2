@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Compte;
 use App\Cotisation;
 use App\Depute;
+use App\Local;
 use App\ModePaiement;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -13,6 +14,10 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Requests;
 use Carbon;
 use File;
+use App\User;
+use App\Typedepute;
+use App\Trace;
+use App\UnionDeputeType;
 
 class CotisationController extends Controller
 {
@@ -53,6 +58,32 @@ class CotisationController extends Controller
     }
 
     public function listeCotisation(){
+
+        if(Auth::user()->id_role <= 2){
+
+            //$deputes = Depute::get();
+            $locals = Local::get();
+            $users = User::get();
+            $typeDeputes = TypeDepute::get();
+            $unios = UnionDeputeType::get();
+
+            $deputes = DB::table('deputes')
+                ->leftJoin('union_depute_type', 'deputes.id_depute', '=', 'union_depute_type.id_depute')
+                ->leftJoin('locals', 'deputes.id_local', '=', 'locals.id_local')
+                ->leftJoin('type_deputes', 'union_depute_type.id_typeDepute', '=', 'type_deputes.id_typeDepute')
+                ->select('deputes.*','locals.*')
+                ->groupBy('deputes.id_depute')
+                ->get();
+
+
+            return view('viewsAdmin.compteBancaire.listeDeputeChoix',compact('deputes','locals', 'users', 'typeDeputes', 'unios'));
+        }
+        return view('errors.404');
+
+    }
+
+    public function listeCotisationchoix(Request $request){
+        //dd($request->all());
         if(Auth::user()->id_role <= 2){
 
             $cotisations = DB::table('cotisations')
@@ -60,10 +91,11 @@ class CotisationController extends Controller
                 ->join('deputes', 'cotisations.id_depute', '=', 'deputes.id_depute')
                 ->join('mode_paiements', 'cotisations.id_mode_paiement', '=', 'mode_paiements.id_mode_paiement')
                 ->select('cotisations.*','comptes.nom_banque','mode_paiements.libelle_mode_paiement','deputes.nom','deputes.prenom')
+                ->where('deputes.id_depute', $request->id_depute)
                 ->groupBy('cotisations.id_cotisation')
                 ->get();
             $mode_paiements = ModePaiement::get();
-            $deputes = Depute::get();
+            $deputes = Depute::get()->where('id_depute', $request->id_depute);
             //dd($cotisations);
             $MyObjects = array();
             foreach ($cotisations as $cotisation){

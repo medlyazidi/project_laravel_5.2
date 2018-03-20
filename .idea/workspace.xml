@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a97bd103-7440-4b18-a89c-3db1c37cb952" name="Default" comment="" />
+    <list default="true" id="a97bd103-7440-4b18-a89c-3db1c37cb952" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/CotisationController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CotisationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/viewsAdmin/depute/listeDepute.blade.php" afterPath="$PROJECT_DIR$/resources/views/viewsAdmin/depute/listeDepute.blade.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,30 +19,33 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="47" />
+            <state relative-caret-position="236">
+              <caret line="217" column="124" lean-forward="false" selection-start-line="217" selection-start-column="104" selection-end-line="217" selection-end-column="124" />
               <folding>
-                <element signature="e#14178#14365#0#PHP" expanded="false" />
+                <element signature="e#14360#14547#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
+      <file leaf-file-name="DeputeController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DeputeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="136">
+              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="e#4591#5393#0#PHP" expanded="false" />
+                <element signature="e#5398#5893#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CotisationController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CotisationController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CotisationController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="-36">
+              <caret line="97" column="12" lean-forward="false" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
               <folding>
                 <element signature="e#40#55#0#PHP" expanded="true" />
               </folding>
@@ -45,21 +53,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthenticatesAndRegistersUsers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php">
+      <file leaf-file-name="listeDepute.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/viewsAdmin/depute/listeDepute.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            <state relative-caret-position="119">
+              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThrottlesLogins.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/ThrottlesLogins.php">
+      <file leaf-file-name="listeCotisation.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/listeCotisation.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="28" />
+            <state relative-caret-position="731">
+              <caret line="43" column="68" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listeDeputeChoix.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/listeDeputeChoix.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1207">
+              <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,17 +87,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>noty_count</find>
-      <find>style</find>
-      <find>copy</find>
-      <find>sSearch</find>
-      <find>sSearch.</find>
-      <find>Search.</find>
-      <find>&quot;Search&quot;</find>
-      <find>Search</find>
-      <find>Show</find>
-      <find>&quot;Show</find>
-      <find>liste_depute_sans_credit</find>
       <find>$cotisations_ann_crt</find>
       <find>$somme_tt_ann</find>
       <find>$cts_prec</find>
@@ -99,6 +106,17 @@
       <find>liste_depute_montant</find>
       <find>list_deputes_montant</find>
       <find>login</find>
+      <find>modalDeputeView</find>
+      <find>modalDeputeEdit</find>
+      <find>modalPlusTypeDepute</find>
+      <find>modalTypeDeputeListe</find>
+      <find>modalDeputeImgEdit</find>
+      <find>liste_cotisation</find>
+      <find>listDepute</find>
+      <find>depute</find>
+      <find>myformLocal</find>
+      <find>listeCotisation</find>
+      <find>$deputes</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -117,10 +135,12 @@
       <replace>modalVoitureEdit</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/viewsAdmin/dropzone-view.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/local/ajouterLocal.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/StatistiqueDeptAnnController.php" />
@@ -132,7 +152,6 @@
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/liste.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/liste_modif.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/listeCompteBancaire.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/listeCotisation.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/listeDepense.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/listeRessource.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/listeTypeRessource.blade.php" />
@@ -144,7 +163,6 @@
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/user/listeUser.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/accueil.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DeputeController.php" />
-        <option value="$PROJECT_DIR$/resources/views/viewsAdmin/depute/listeDepute.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_12_14_001938_create_voitures_table.php" />
         <option value="$PROJECT_DIR$/app/Voiture.php" />
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/voiture/liste_voiture.blade.php" />
@@ -155,7 +173,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/DeputeCreditController.php" />
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/notification.blade.php" />
         <option value="$PROJECT_DIR$/public/traduction.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/statistique/ctst_mois_depute.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/statistique/depute_annee.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/statistique/etat_depense.blade.php" />
@@ -170,7 +187,11 @@
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/statistique/liste_first.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/viewsAdmin/statistique/liste.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/StatistiqueController.php" />
+        <option value="$PROJECT_DIR$/resources/views/viewsAdmin/depute/listeDepute.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/listeCotisation.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CotisationController.php" />
+        <option value="$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/listeDeputeChoix.blade.php" />
       </list>
     </option>
   </component>
@@ -238,6 +259,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,35 +271,33 @@
             <path>
               <item name="larav_13_12" type="b2602c69:ProjectViewProjectNode" />
               <item name="larav_13_12" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="larav_13_12" type="b2602c69:ProjectViewProjectNode" />
               <item name="larav_13_12" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="larav_13_12" type="b2602c69:ProjectViewProjectNode" />
               <item name="larav_13_12" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="viewsAdmin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="larav_13_12" type="b2602c69:ProjectViewProjectNode" />
               <item name="larav_13_12" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Auth" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="viewsAdmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="compteBancaire" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,17 +413,19 @@
       <workItem from="1514201937943" duration="15463000" />
       <workItem from="1514233372840" duration="811000" />
       <workItem from="1517842347580" duration="1094000" />
+      <workItem from="1521333618965" duration="683000" />
+      <workItem from="1521487085384" duration="2884000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="595648000" />
+    <option name="totallyTimeSpent" value="599215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23718888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23718888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -435,27 +458,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/listeDepense.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/listeRessource.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/listeTypeRessource.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/liste.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -502,13 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="43" column="40" lean-forward="false" selection-start-line="43" selection-start-column="40" selection-end-line="45" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/viewsAdmin/depute/listeDepute.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="98" column="44" lean-forward="true" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -563,9 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -580,17 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DeputeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="26" />
-          <folding>
-            <element signature="e#4591#5393#0#PHP" expanded="false" />
-            <element signature="e#5398#5893#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -767,7 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="61" column="119" lean-forward="false" selection-start-line="61" selection-start-column="119" selection-end-line="61" selection-end-column="119" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -775,25 +755,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="62" column="85" lean-forward="false" selection-start-line="62" selection-start-column="85" selection-end-line="62" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/ThrottlesLogins.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
+        <state relative-caret-position="1054">
           <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="28" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="47" />
-          <folding>
-            <element signature="e#14178#14365#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -805,21 +774,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="38" />
+        <state relative-caret-position="323">
+          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="38" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="217" column="124" lean-forward="false" selection-start-line="217" selection-start-column="104" selection-end-line="217" selection-end-column="124" />
+          <folding>
+            <element signature="e#14360#14547#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DeputeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#4591#5393#0#PHP" expanded="false" />
+            <element signature="e#5398#5893#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CotisationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="-36">
+          <caret line="97" column="12" lean-forward="false" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
           <folding>
             <element signature="e#40#55#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/viewsAdmin/depute/listeDepute.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/listeCotisation.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="68" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/viewsAdmin/compteBancaire/listeDeputeChoix.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

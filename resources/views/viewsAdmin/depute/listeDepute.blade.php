@@ -44,7 +44,7 @@
                             <th>{!! $telephone !!}</th>
                             <th>{!! $email !!}</th>
                             <th>{!! $prenom !!}</th>
-                            <th>{!! $nom !!}</th>
+                            <th>{!! $nom !!} </th>
                             <th>N°</th>
                         </tr>
                         </thead>

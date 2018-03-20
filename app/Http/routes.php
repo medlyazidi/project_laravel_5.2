@@ -214,6 +214,9 @@ Route::group(['prefix'=>'admin'],function(){
                 //liste modification des cotisations
                 Route::get('liste_cotisation','CotisationController@listeCotisation')->name('listeCotisation');
 
+                //liste modification des cotisations
+                Route::get('liste_cotisation_choix','CotisationController@listeCotisationchoix')->name('listeCotisationchoix');
+
                 //gestion des exceptions
                 Route::get('liste_cotisation/exception={exception}','CotisationController@gestionException');
 
